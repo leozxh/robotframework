@@ -1,58 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.0.4 (Python 3.6.5 on win32)" generated="20210224 16:01:51.846">
+<robot generator="Robot 3.0.4 (Python 3.6.5 on win32)" generated="20210224 17:22:10.531">
 <suite id="s1" name="Test1" source="H:\robotframework\selenium_robot\test1.robot">
-<test id="s1-t1" name="Baidu search case">
+<test id="s1-t1" name="Cxm caiwu login">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10</arg>
+</arguments>
+<msg timestamp="20210224 17:22:20.778" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20210224 17:22:10.777" endtime="20210224 17:22:20.779"></status>
+</kw>
 <kw name="Open Browser" library="SeleniumLibrary">
 <doc>Opens a new browser instance to the given ``url``.</doc>
 <arguments>
-<arg>http://www.baidu.com</arg>
+<arg>http://test.mmp-new.caixm.cn/</arg>
 <arg>chrome</arg>
 </arguments>
-<msg timestamp="20210224 16:01:52.065" level="INFO">Opening browser 'chrome' to base url 'http://www.baidu.com'.</msg>
-<status status="PASS" starttime="20210224 16:01:52.064" endtime="20210224 16:01:54.982"></status>
+<msg timestamp="20210224 17:22:20.782" level="INFO">Opening browser 'chrome' to base url 'http://test.mmp-new.caixm.cn/'.</msg>
+<status status="PASS" starttime="20210224 17:22:20.781" endtime="20210224 17:22:27.303"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
 <arguments>
-<arg>id=kw</arg>
-<arg>robot framework</arg>
+<arg>id:userName</arg>
+<arg>15868134428</arg>
 </arguments>
-<msg timestamp="20210224 16:01:54.983" level="INFO">Typing text 'robot framework' into text field 'id=kw'.</msg>
-<status status="PASS" starttime="20210224 16:01:54.983" endtime="20210224 16:01:55.278"></status>
+<msg timestamp="20210224 17:22:27.304" level="INFO">Typing text '15868134428' into text field 'id:userName'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20210224 17:22:27.801" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210224 17:22:27.478" endtime="20210224 17:22:27.801"></status>
 </kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>5</arg>
-</arguments>
-<msg timestamp="20210224 16:02:00.282" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20210224 16:01:55.281" endtime="20210224 16:02:00.282"></status>
+<msg timestamp="20210224 17:22:27.805" level="FAIL">Element with locator 'id:userName' not found.</msg>
+<status status="FAIL" starttime="20210224 17:22:27.303" endtime="20210224 17:22:27.806"></status>
 </kw>
-<kw name="Click Button" library="SeleniumLibrary">
-<doc>Clicks button identified by ``locator``.</doc>
-<arguments>
-<arg>id=su</arg>
-</arguments>
-<msg timestamp="20210224 16:02:00.283" level="INFO">Clicking button 'id=su'.</msg>
-<status status="PASS" starttime="20210224 16:02:00.282" endtime="20210224 16:02:00.393"></status>
-</kw>
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20210224 16:02:00.393" endtime="20210224 16:02:02.747"></status>
-</kw>
-<status status="PASS" starttime="20210224 16:01:52.063" endtime="20210224 16:02:02.748" critical="yes"></status>
+<status status="FAIL" starttime="20210224 17:22:10.776" endtime="20210224 17:22:27.806" critical="yes">Element with locator 'id:userName' not found.</status>
 </test>
-<status status="PASS" starttime="20210224 16:01:51.849" endtime="20210224 16:02:02.757"></status>
+<status status="FAIL" starttime="20210224 17:22:10.533" endtime="20210224 17:22:27.813"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0">Critical Tests</stat>
-<stat pass="1" fail="0">All Tests</stat>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" id="s1" name="Test1">Test1</stat>
+<stat pass="0" fail="1" id="s1" name="Test1">Test1</stat>
 </suite>
 </statistics>
 <errors>

@@ -2,9 +2,11 @@
 Library           SeleniumLibrary
 
 *** Test Cases ***
-Baidu search case
-    Open Browser    http://www.baidu.com    chrome
-    Input text    id=kw    robot framework
-    sleep   5
-    click button    id=su
-    close Browser
+Cxm caiwu login
+    Open Browser    http://test.mmp-new.caixm.cn/    chrome
+    Input text    id:userName    15868134428
+    sleep   2
+    Input text    id:password    232323
+    sleep   2
+    click button    xpth://*[@id="root"]/div/div[2]/div[2]/div/form/div[3]/div/div/span/button
+#    close Browser
